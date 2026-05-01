@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yacht Club | Jeddah</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .yacht-hero {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/Yacht/Image 2025-05-15 Yacht00.jpg') no-repeat center center / cover;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .biennale-content {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .exhibition-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .highlight-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .highlight-card:hover {
+      transform: translateY(-10px);
+    }
+    .highlight-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    .highlight-text {
+      padding: 1.5rem;
+    }
+    .info-section {
+      background: #e8f4f8;
+      padding: 3rem;
+      border-radius: 15px;
+      margin: 3rem 0;
+    }
+    
+    .back-btn {
+      display: inline-block;
+     margin: 20px;
+     font-size: 18px;
+     background-color: #fffafa;
+     color: #333;
+     padding: 10px 20px;
+     text-decoration: none;
+     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  </style>
+</head>
+<body>
+
+
+  <nav class="main-nav">
+    <a href="index.html" class="logo">Visiting<span>Jeddah</span></a>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#newsletter">Stay Updated</a></li>
+      </ul>
+    </div>
+    <img src="image/Jeddah _ جدة Sticker by albobah.png" class="nav-image"
+    height="50" alt="">
+  </nav>
+</div>
+
+  <header class="yacht-hero hero">
+    <div class="hero-content">
+      <h1>Jeddah Yacht Club</h1>
+      <p>Luxury, Leisure, and Marine Adventures Await</p>
+      <div class="hero-details">
+        <span><i class="fas fa-map-marker-alt"></i> Jeddah Waterfront</span>
+        <span><i class="fas fa-calendar-alt"></i> Open Year-Round</span>
+      </div>
+    </div>
+  </header>
+  <a href="explore.html" class="back-btn">← Back</a>
+  <main class="biennale-content">
+    <section class="intro-section">
+      <h2>Yacht Club Experience</h2>
+      <p>Discover elegance at sea. The Jeddah Yacht Club offers world-class marina services, luxury yacht rentals, fine dining, and exclusive events. Whether you're sailing or just enjoying the view, it's a journey into maritime sophistication.</p>
+    </section>
+
+    <section class="info-section">
+      <div class="info-grid">
+        <div>
+          <h3><i class="fas fa-ship"></i> Marina Services</h3>
+          <p>Docking, fueling, and 24/7 support</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-glass-cheers"></i> Dining & Lounges</h3>
+          <p>Sea-view restaurants & exclusive lounges</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-water"></i> Activities</h3>
+          <p>Yacht rentals, cruises, and water sports</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibition-section">
+      <h2>Highlights</h2>
+      <div class="exhibition-highlights">
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/Yacht/Image 2025-05-15 Yacht1.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Luxury Dining</h3>
+            <p>Fine cuisine by the sea</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/Yacht/Image 2025-05-15 Yacht2.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Private Yachts</h3>
+            <p>Charter your perfect escape</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/Yacht/Image 2025-05-15 Yacht3.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Exclusive Events</h3>
+            <p>Host unforgettable gatherings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Join the Club</h2>
+      <p>Become a member and enjoy exclusive privileges</p>
+      <a href="https://www.jeddahyc.com" class="cta-button" target="_blank">Apply Now <i class="fas fa-arrow-right"></i></a>
+    </section>
+    
+
+    <section id="newsletter" class="newsletter">
+      <h3>Stay Updated</h3>
+      <form id="subscribeForm" class="email-subscription">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="thankYouMsg" style="display:none; color: green; font-weight:bold; margin-top: 10px;">
+        Thank you for subscribing!
+      </p>
+    </section>
+     
+    <script>
+    document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      var msg = document.getElementById("thankYouMsg");
+      msg.style.display = "block"; 
+      setTimeout(function() {
+        msg.style.display = "none";
+      }, 3000);
+    });
+    
+    </script>
+    
+    <footer>
+      <p>&copy; 2025 Visiting Jeddah. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

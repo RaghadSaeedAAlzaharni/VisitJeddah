@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Red Sea Film Festival | Jeddah</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .redsea-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/red sea/east-project-ksa-6-1024x818.jpg') no-repeat center center / cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .redsea-content {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .exhibition-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .highlight-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .highlight-card:hover {
+      transform: translateY(-10px);
+    }
+    .highlight-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    .highlight-text {
+      padding: 1.5rem;
+    }
+    .info-section {
+      background: #f8f4e8;
+      padding: 3rem;
+      border-radius: 15px;
+      margin: 3rem 0;
+    }
+    .films-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+    .films {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .films-overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      right: 0;
+      background: rgba(0, 109, 119, 0.9);
+      color: white;
+      padding: 1rem;
+      transition: bottom 0.3s;
+    }
+    .films:hover .films-overlay {
+        bottom: 0;
+    }
+    
+    .back-btn {
+        display: inline-block;
+        margin: 20px;
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav class="main-nav">
+    <a href="index.html" class="logo">Visiting<span>Jeddah</span></a>
+    <div class="nav-container">
+        
+      <ul>
+        <li><a href="index.html">Home Page </a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#newsletter">Stay Updated</a></li>
+      </ul>
+    </div>
+    <img src="image/Jeddah _ جدة Sticker by albobah.png" class="nav-image"
+    height="50" alt="">
+  </nav>
+
+  <header class="redsea-hero hero">
+    <div>
+      <h1>Red Sea Film Festival</h1>
+      <p>Celebrating cinema on the coast of Jeddah</p>
+      <div>
+        <span><i class="fas fa-map-marker-alt"></i> Al-Balad Historic District, Jeddah</span>
+        <span><i class="fas fa-calendar-alt"></i> December 5 - December 14, 2025</span>
+      </div>
+    </div>
+  </header>
+  <a href="explore.html" class="back-btn"> ← Back</a>
+  <main class="redsea-content">
+    <section>
+      <h2>About the Festival</h2>
+      <p>The Red Sea International Film Festival is a cinematic celebration that brings together storytellers from the Arab world and beyond. Held in the vibrant Al-Balad district, the festival features screenings, masterclasses, red carpet events, and awards ceremonies.</p>
+      <p>Now in its 5th edition, the festival continues to support emerging filmmakers and provide a platform for bold, innovative, and diverse voices in cinema.</p>
+    </section>
+
+    <section class="info-section">
+      <div>
+        <div>
+          <h3><i class="fas fa-clock"></i> Screening Hours</h3>
+          <p>Daily: 4PM - 12AM</p>
+          <p>Masterclasses: 2PM - 5PM</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-ticket-alt"></i> Tickets</h3>
+          <p>General Pass: SAR 100</p>
+          <p>Day Ticket: SAR 30</p>
+          <p>Workshops: SAR 50</p>
+          <p>Students: SAR 20 (with ID)</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-info-circle"></i> Visitor Info</h3>
+          <p>Films subtitled in Arabic & English</p>
+          <p>Open-air and indoor venues</p>
+          <p>Food trucks & lounges on-site</p>
+          <p>Limited parking – arrive early</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Festival Highlights</h2>
+      <div class="exhibition-highlights">
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/red sea/Star-studded-Red-Sea-film-fest-opens-with-slew-of-awards-and-world-premiere-of-‘HWJN.jpeg')"></div>
+          <div class="highlight-text">
+            <h3>Opening Gala</h3>
+            <p>A star-studded night with regional and international guests</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/red sea/RedSeaSouk_En_M.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Red Sea Souk</h3>
+            <p>A marketplace for film professionals and creators to connect</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/red sea/Untitled-design-48-1.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Arab Talent Awards</h3>
+            <p>Recognizing excellence in regional filmmaking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Films</h2>
+      <div class="films-gallery">
+        <div class="films" style="background-image: url('image/red sea/P_HO00011077.jpg')">
+          <div class="films-overlay">
+            <h3>Ahlam Alasaar</h3>
+            <p>Director: Faris Godus</p>
+          </div>
+        </div>
+        <div class="films" style="background-image: url('image/red sea/poster_9919.jpg')">
+          <div class="films-overlay">
+            <h3>SABA</h3>
+            <p>Directed by: Maksud Hossain</p>
+          </div>
+        </div>
+        <div class="films" style="background-image: url('image/red sea/poster_10501.jpg')">
+          <div class="films-overlay">
+            <h3>6 AM</h3>
+            <p>Directed by: Mehran Modiri</p>
+          </div>
+        </div>
+        <div class="films" style="background-image: url('image/red sea/poster_12656.png')">
+          <div class="films-overlay">
+            <h3>SONGS OF ADAM</h3>
+            <p>Directed by: Oday Rasheed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Join the Celebration</h2>
+      <p>Explore powerful stories and inspiring voices at the Red Sea Film Festival. Reserve your seat today!</p>
+      <a href="https://redseafilmfest.com/ar/press-release/باقات-تذاكر-مهرجان-البحر-الأحمر-السين/"> Get Passes <i class="fas fa-arrow-right"></i></a>
+    </section>
+    </main>
+    
+    <section id="newsletter" class="newsletter">
+      <h3>Stay Updated</h3>
+      <form id="subscribeForm" class="email-subscription">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="thankYouMsg" style="display:none; color: green; font-weight:bold; margin-top: 10px;">
+        Thank you for subscribing!
+      </p>
+    </section>
+     
+    <script>
+    document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      var msg = document.getElementById("thankYouMsg");
+      msg.style.display = "block"; 
+      setTimeout(function() {
+        msg.style.display = "none";
+      }, 3000);
+    });
+    
+    </script>
+    
+    <footer>
+      <p>&copy; 2025 Visiting Jeddah. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Art Promenade | Jeddah</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .art-hero {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/art Promenade/Image 2025-05-15 Art0.jpg') no-repeat center center / cover;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .biennale-content {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .exhibition-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .highlight-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .highlight-card:hover {
+      transform: translateY(-10px);
+    }
+    .highlight-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    .highlight-text {
+      padding: 1.5rem;
+    }
+    .info-section {
+      background: #f8f4e8;
+      padding: 3rem;
+      border-radius: 15px;
+      margin: 3rem 0;
+    }
+    
+    .back-btn {
+      display: inline-block;
+     margin: 20px;
+     font-size: 18px;
+     background-color: #fffafa;
+     color: #333;
+     padding: 10px 20px;
+     text-decoration: none;
+     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  </style>
+</head>
+<body>
+
+  <nav class="main-nav">
+    <a href="index.html" class="logo">Visiting<span>Jeddah</span></a>
+    <div class="nav-container">
+        
+      <ul>
+        <li><a href="index.html">Home Page </a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#newsletter">Stay Updated</a></li>
+      </ul>
+    </div>
+    <img src="image/Jeddah _ جدة Sticker by albobah.png" class="nav-image"
+    height="50" alt="">
+  </nav>
+
+  <header class="art-hero hero">
+    <div class="hero-content">
+      <h1>Art Promenade</h1>
+      <p>A vibrant walkway celebrating public art in Jeddah</p>
+      <div class="hero-details">
+        <span><i class="fas fa-map-marker-alt"></i> Jeddah Waterfront</span>
+        <span><i class="fas fa-calendar-alt"></i> Open Year-Round</span>
+      </div>
+    </div>
+  </header>
+  <a href="explore.html" class="back-btn">← Back</a>
+  <main class="biennale-content">
+    <section class="intro-section">
+      <h2>Explore Art Promenade</h2>
+      <p>The Art Promenade is a public space along the Jeddah Corniche that features sculptures, interactive installations, and breathtaking views. It's a perfect blend of modern creativity and leisure by the Red Sea.</p>
+    </section>
+
+    <section class="info-section">
+      <div class="info-grid">
+        <div>
+          <h3><i class="fas fa-palette"></i> Public Art</h3>
+          <p>Large-scale sculptures and artistic installations</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-walking"></i> Walkway</h3>
+          <p>Scenic path along the Red Sea with beautiful sunsets</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-camera-retro"></i> Experience</h3>
+          <p>Perfect for photography, leisure, and cultural events</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibition-section">
+      <h2>Highlights</h2>
+      <div class="exhibition-highlights">
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/art Promenade/Image 2025-05-15 Art1.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Sculpture Lane</h3>
+            <p>Admire stunning modern sculptures by international artists</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/art Promenade/Image 2025-05-15 Art Promenade2.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Interactive Installations</h3>
+            <p>Engage with art that comes alive with your movement</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/art Promenade/Image 2025-05-15 Art Promenade3.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Sunset Views</h3>
+            <p>Capture unforgettable moments along the seaside path</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Plan Your Visit</h2>
+      <p>Enjoy a creative journey by the Red Sea</p>
+      <a href="https://www.visitsaudi.com/en/jeddah/attractions/jeddah-art-promenade" class="cta-button" target="_blank">Learn More <i class="fas fa-arrow-right"></i></a>
+    </section>
+    </main>
+    <section id="newsletter" class="newsletter">
+      <h3>Stay Updated</h3>
+      <form id="subscribeForm" class="email-subscription">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="thankYouMsg" style="display:none; color: green; font-weight:bold; margin-top: 10px;">
+        Thank you for subscribing!
+      </p>
+    </section>
+     
+    <script>
+    document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      var msg = document.getElementById("thankYouMsg");
+      msg.style.display = "block"; 
+      setTimeout(function() {
+        msg.style.display = "none";
+      }, 3000);
+    });
+    
+    </script>
+      
+    <footer>
+      <p>&copy; 2025 Visiting Jeddah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

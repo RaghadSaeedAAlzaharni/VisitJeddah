@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visiting Jeddah</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+     
+    #welcomeMessage {
+      display: none; 
+      background-color: #5cffd9;
+      color: #08625d;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div id="welcomeMessage">Welcome to the visiting Jeddah website!</div>
+
+  <nav class="main-nav">
+    <a href="index.html" class="logo">Visiting<span>Jeddah</span></a>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#newsletter">Stay Updated</a></li>
+      </ul>
+    </div>
+    <img src="image/Jeddah _ جدة Sticker by albobah.png" class="nav-image"
+    height="50" alt="">
+  </nav>
+</div>
+
+
+  <header class="main-hero">
+    <div class="main-hero-content">
+      <h1>Visiting Jeddah</h1>
+      <p>Explore the vibrant soul of the Red Sea's iconic city</p>
+    </div>
+  </header>
+
+
+  <div style="text-align:center ; margin-top :40px; margin-left: 50px; margin-right: 20px;">
+   
+    <div class="itinerary-card">
+      <div class="img-grid">
+        
+       
+        <img src="image/jeddapph3.jpg" style="width:20cm;
+        height:10cm;margin-top: 30px;">
+      </div>
+    
+      <div class="details">
+        <h6>Gather your family </h6>
+        <h2>The ultimate summer for families </h2>
+        <p>Jeddah is a city where tradition meets modernity, offering a unique blend of cultural heritage, contemporary architecture, and vibrant coastal life. Whether you're exploring its historical neighborhoods or strolling along the Corniche, the city never fails to impress. Below are some of the most significant and visually stunning locations that highlight the charm and character of Jeddah: </p>
+        <a href="explore.html"  target="_blank">
+        <h3 class="detail-link">see more details</h3>
+      </a>
+        
+    </div>
+    
+      </div>
+    
+    </div>
+
+    
+
+<div style="text-align:center; margin-top: 40px; margin-left: 50px; margin-right: 20px;">
+    <h2 style="font-size: 40px;"> top landmarks </h2>
+  </div>  
+
+  
+  <section id="explore" class="cards-container">
+    
+    <div class="row">
+    <a href="yachtclub.html" class="card" target="_blank">
+      <h3 class="card-link">Yacht Club</h3>
+      <p>Luxury and views at the Red Sea Marina</p>
+    </a>
+   
+  
+    <a href="albalad.html" class="card1" target="_blank">
+      <h3 class="card-link">Al-Balad</h3>
+      <p>Historic vibes and vibrant souks</p>
+    </a>
+    
+  </div>
+  <div class="row">
+    <a href="artpromenade.html" class="card2" target="_blank">
+      <h3 class="card-link">Art Promenade</h3>
+      <p> Where creativity meets the coast</p>
+    </a>
+    
+  
+    <a href="islamicmuseum.html" class="card3" target="_blank">
+      <h3 class="card-link">Islamic Arts Biennale</h3>
+      <p>Contemporary Islamic art exhibition</p>
+    </a>
+</div>
+
+<div style="text-align: center; margin: 40px auto;">
+  <h2 style="font-size: 20px; margin-bottom: 15px;">Explore More</h2>
+  <a href="explore.html" target="_blank" style="text-decoration: none; font-size: 16px; background-color: #345c65; color: white; padding: 8px 16px; border-radius: 6px; display: inline-block;">Go to Explore Page</a>
+</div>
+
+
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <h3>Stay Updated</h3>
+    <form id="subscribeForm" class="email-subscription">
+      <input type="email" id="emailInput" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="thankYouMsg" style="display:none; color: green; font-weight:bold; margin-top: 10px;">
+      Thank you for subscribing!
+    </p>
+  </section>
+
+
+    <div id="emailModal" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h5 style="font-size:20px;">Subscribe Now</h5>
+        
+        <video width="300" height="200" id="vid" muted>
+          <source src="jeddah-city.mp4" type="video/mp4">
+        </video>
+    
+        <p>Join Visiting Jeddah with us!</p>
+    
+        <input type="email" id="userEmail" placeholder="Your email" required>
+        <p id="emailError" style="color: red; display: none; font-size: 14px;">Please enter a valid email address.</p>
+        
+        <button onclick="submitEmail()">Subscribe</button>
+      </div>
+    </div>
+    
+  <footer>
+    <p>&copy; 2025 Visiting Jeddah. All rights reserved.</p>
+  </footer>
+
+  <script>
+     
+    window.onload = function() {
+      var welcomeMsg = document.getElementById("welcomeMessage");
+      welcomeMsg.style.display = "block";
+      setTimeout(function() {
+        welcomeMsg.style.display = "none";
+      }, 2000);
+     
+      setTimeout(function() {
+      document.getElementById("emailModal").style.display="block" ;
+      
+    }, 2000);
+
+    var vid = document.getElementById("vid");
+    setTimeout(function () {
+      vid.play();
+    }, 2000);
+  };
+   
+
+    
+  document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      var msg = document.getElementById("thankYouMsg");
+      msg.style.display = "block"; 
+      setTimeout(function() {
+        msg.style.display = "none";
+      }, 3000);
+    });
+  
+    const header = document.querySelector('.main-hero-content h1');
+    header.addEventListener('mouseenter', function() {
+      header.textContent = "Welcome to Jeddah!";
+    });
+    header.addEventListener('mouseleave', function() {
+      header.textContent = "Visiting Jeddah";
+    });
+
+  function closeModal() {
+    document.getElementById("emailModal").style.display="none" ;
+  }
+
+ 
+  function submitEmail() {
+  var emailInput = document.getElementById("userEmail");
+
+  if (emailInput.checkValidity()) {
+    var email = emailInput.value.trim();
+    alert("Thank you for subscribing, " + email + "!");
+    closeModal();
+  } else {
+    alert("Please enter a valid email address.");
+    emailInput.focus();
+  }
+}
+
+  </script>
+
+</body>
+</html>
+
+
+

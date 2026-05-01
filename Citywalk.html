@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Walk | Jeddah</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .citywalk-hero {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/Citywalk/Image 2025-05-15 Citywalk0.jpg') no-repeat center center / cover;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .biennale-content {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .exhibition-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .highlight-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .highlight-card:hover {
+      transform: translateY(-10px);
+    }
+    .highlight-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    .highlight-text {
+      padding: 1.5rem;
+    }
+    .info-section {
+      background: #f8f4e8;
+      padding: 3rem;
+      border-radius: 15px;
+      margin: 3rem 0;
+    }
+    
+    .back-btn {
+      display: inline-block;
+     margin: 20px;
+     font-size: 18px;
+     background-color: #fffafa;
+     color: #333;
+     padding: 10px 20px;
+     text-decoration: none;
+     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  </style>
+</head>
+<body>
+
+  <nav class="main-nav">
+    <a href="index.html" class="logo">Visiting<span>Jeddah</span></a>
+    <div class="nav-container">
+        
+      <ul>
+        <li><a href="index.html">Home Page </a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="#newsletter">Stay Updated</a></li>
+      </ul>
+    </div>
+    <img src="image/Jeddah _ جدة Sticker by albobah.png" class="nav-image"
+    height="50" alt="">
+  </nav>
+
+  <header class="citywalk-hero hero">
+    <div class="hero-content">
+      <h1>City Walk</h1>
+      <p>A vibrant entertainment zone in the heart of Jeddah</p>
+      <div class="hero-details">
+        <span><i class="fas fa-map-marker-alt"></i> Jeddah Waterfront</span>
+        <span><i class="fas fa-calendar-alt"></i> 30 April 2025 to 14 June 2025</span>
+      </div>
+    </div>
+  </header>
+  <a href="explore.html" class="back-btn">← Back</a>
+  <main class="biennale-content">
+    <section class="intro-section">
+      <h2>About City Walk</h2>
+      <p>City Walk is a modern outdoor venue featuring themed zones, immersive experiences, restaurants, shops, and live shows. Perfect for families, tourists, and thrill seekers alike.</p>
+    </section>
+
+    <section class="info-section">
+      <div class="info-grid">
+        <div>
+          <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+          <p>Weekdays: 4:00 PM - 12:00 AM</p>
+          <p>Weekends: 4:00 PM - 1:00 AM</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-ticket-alt"></i> Entry</h3>
+          <p>Free Admission</p>
+          <p>Pay-per-attraction inside</p>
+        </div>
+        <div>
+          <h3><i class="fas fa-info-circle"></i> Facilities</h3>
+          <p>Restaurants, retail shops</p>
+          <p>Kids’ play zones</p>
+          <p>Live performances</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibition-section">
+      <h2>Featured Attractions</h2>
+      <div class="exhibition-highlights">
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/Citywalk/Image 2025-05-15 Citywalk1.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Game Zone</h3>
+            <p>Fun,Action,and Interactive Entertainment for all Ages</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/Citywalk/Image 2025-05-15 Citywalk2.jpg')"></div>
+          <div class="highlight-text">
+            <h3>Restaurant District</h3>
+            <p>Local and international dining options</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-image" style="background-image: url('image/Citywalk/Image 2025-05-15 Citywalk3.jpg')"></div>
+          <div class="highlight-text">
+            <h3>City Walk Live</h3>
+            <p>Live acts and entertainers every night</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Plan Your Visit</h2>
+      <p>Experience the energy of City Walk today!</p>
+      <a href="https://webook.com/en/zones/city-walk-jeddah-season-2025?utm_source=google&utm_medium=paid_search&utm_campaign=jeddahcalendar&gad_source=1" class="cta-button" target="_blank">Explore Events <i class="fas fa-arrow-right"></i></a>
+    </section>
+    </main>
+    
+    <section id="newsletter" class="newsletter">
+      <h3>Stay Updated</h3>
+      <form id="subscribeForm" class="email-subscription">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="thankYouMsg" style="display:none; color: green; font-weight:bold; margin-top: 10px;">
+        Thank you for subscribing!
+      </p>
+    </section>
+     
+    <script>
+    document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      var msg = document.getElementById("thankYouMsg");
+      msg.style.display = "block"; 
+      setTimeout(function() {
+        msg.style.display = "none";
+      }, 3000);
+    });
+    
+    </script>
+    
+    <footer>
+      <p>&copy; 2025 Visiting Jeddah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
