@@ -8,7 +8,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-     
+    /* Mobile Menu Styles */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background-color: #ffdd99;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+
     #welcomeMessage {
       display: none; 
       background-color: #5cffd9;
@@ -17,6 +47,7 @@
       text-align: center;
       font-weight: bold;
       margin-top: 10px;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -27,7 +58,12 @@
 
   <nav class="main-nav">
     <a href="index.html" class="logo">Visiting<span>Jeddah</span></a>
-    <div class="nav-container">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-container" id="navContainer">
       <ul>
         <li><a href="index.html">Home </a></li>
         <li><a href="explore.html">Explore</a></li>
@@ -48,21 +84,18 @@
   </header>
 
 
-  <div style="text-align:center ; margin-top :40px; margin-left: 50px; margin-right: 20px;">
+  <div style="text-align:center; margin-top: 2rem; margin-left: 1rem; margin-right: 1rem; padding: 0 1rem;">
    
     <div class="itinerary-card">
       <div class="img-grid">
-        
-       
-        <img src="image/jeddapph3.jpg" style="width:20cm;
-        height:10cm;margin-top: 30px;">
+        <img src="image/jeddapph3.jpg" class="itinerary-image" alt="Family gathering in Jeddah">
       </div>
     
       <div class="details">
         <h6>Gather your family </h6>
         <h2>The ultimate summer for families </h2>
         <p>Jeddah is a city where tradition meets modernity, offering a unique blend of cultural heritage, contemporary architecture, and vibrant coastal life. Whether you're exploring its historical neighborhoods or strolling along the Corniche, the city never fails to impress. Below are some of the most significant and visually stunning locations that highlight the charm and character of Jeddah: </p>
-        <a href="explore.html"  target="_blank">
+        <a href="explore.html" target="_blank">
         <h3 class="detail-link">see more details</h3>
       </a>
         
@@ -71,11 +104,11 @@
       </div>
     
     </div>
-
     
+  </div>
 
-<div style="text-align:center; margin-top: 40px; margin-left: 50px; margin-right: 20px;">
-    <h2 style="font-size: 40px;"> top landmarks </h2>
+<div class="section-title">
+    <h2>Top Landmarks</h2>
   </div>  
 
   
@@ -107,9 +140,9 @@
     </a>
 </div>
 
-<div style="text-align: center; margin: 40px auto;">
-  <h2 style="font-size: 20px; margin-bottom: 15px;">Explore More</h2>
-  <a href="explore.html" target="_blank" style="text-decoration: none; font-size: 16px; background-color: #345c65; color: white; padding: 8px 16px; border-radius: 6px; display: inline-block;">Go to Explore Page</a>
+<div class="explore-more-section">
+  <h2>Explore More</h2>
+  <a href="explore.html" target="_blank" class="explore-button">Go to Explore Page</a>
 </div>
 
 
@@ -150,6 +183,23 @@
   </footer>
 
   <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById("menuToggle");
+    const navContainer = document.getElementById("navContainer");
+    
+    menuToggle.addEventListener("click", function() {
+      menuToggle.classList.toggle("active");
+      navContainer.classList.toggle("active");
+    });
+
+    // Close mobile menu when a link is clicked
+    const navLinks = navContainer.querySelectorAll("a");
+    navLinks.forEach(link => {
+      link.addEventListener("click", function() {
+        menuToggle.classList.remove("active");
+        navContainer.classList.remove("active");
+      });
+    });
      
     window.onload = function() {
       var welcomeMsg = document.getElementById("welcomeMessage");
